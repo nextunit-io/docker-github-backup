@@ -18,7 +18,7 @@ docker build -t nextunit/github-backup .
 |GITHUB_USERNAME|Your github username|
 |GITHUB_ACCESS_TOKEN|Your token, you created for github. Here you can find, how you can create one: [https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)|
 |SLACK_NOTIFICATION_ENDPOINT *(Optional)*|This entry is just required, if you'd like to send update-debug messages to slack.|
-|BACKUP_MAX_FILES *(Optional)*|The backup script will delete older backups. With this entry you define how many backups should be stored before it deletes newers. Older files in the directory will be deleted. The **Default Value is 5**. If you wan't to disable this feature, use 0.|
+|BACKUP_MAX_FILES *(Optional)*|The backup script will delete older backups. With this entry you define how many backups should be stored before it deletes newers. Older files in the directory will be deleted. The **Default Value is 5**. If you'd like to disable this feature, use 0.|
 
 ## Run Docker
 

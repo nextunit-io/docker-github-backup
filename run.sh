@@ -9,7 +9,7 @@ if [ -z "$GITHUB_ACCESS_TOKEN" ]; then
     exit 1
 fi
 
-REPOSITORIES="$(curl -s -u "$GITHUB_USERNAME:$GITHUB_ACCESS_TOKEN" "https://api.github.com/user/repos" | jq -r '.[].full_name')"
+REPOSITORIES="$(curl -s -u "$GITHUB_USERNAME:$GITHUB_ACCESS_TOKEN" "https://api.github.com/user/repos?per_page=1000" | jq -r '.[].full_name')"
 echo "$REPOSITORIES"
 
 REPO_PATH="$(pwd)/repos"
